@@ -1,0 +1,85 @@
+using System;
+using System.Net;
+
+namespace Calculator_assignment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*********************CALCULATOR ASSIGNMENT*********************");
+            Console.WriteLine("---------------------------------------------------------------");
+
+                Console.WriteLine("SELECT THE OPERATORS FROM BELOW");
+                Console.WriteLine("1: ****ADDING****");
+                Console.WriteLine("2: ****SUBTRACTING****");
+                Console.WriteLine("3: ****MULTIPLING****");
+                Console.WriteLine("4: ****DIVIDING****");
+                Console.WriteLine("5: ****SQUARE ROOT****");
+                Console.WriteLine("6: ****POWER ROOT****");
+                double oper = Convert.ToDouble(Console.ReadLine());
+
+                double num1;
+                double num2;
+                string number;
+                double ANSWER;
+                if (oper == 1)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter number two  :");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = num1 + num2;
+                    number = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else if (oper == 2)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter number two  :");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = num1 - num2;
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else if (oper == 3)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter number two  :");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = num1 * num2;
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else if (oper == 4)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter number two  :");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = num1 / num2;
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else if (oper == 5)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = Math.Sqrt(num1);
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else if (oper == 6)
+                {
+                    Console.WriteLine("Enter number one :");
+                    num1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter number two  :");
+                    num2 = Convert.ToDouble(Console.ReadLine());
+                    ANSWER = Math.Pow(num1, num2);
+                    Console.WriteLine("The answer is :" + ANSWER);
+                }
+                else
+                {
+                    Console.WriteLine("INCORRECT OPERATOR");
+                }
+        }
+    }
+}
